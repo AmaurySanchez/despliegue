@@ -1,0 +1,22 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "a13.daw.com" IN {
+        type master;
+        file "/etc/bind/db.a13.daw.com";
+};
+
+zone "a13.a14.daw.com" IN {
+      type master;
+      file "/etc/bind/db.a13.a14.daw.com";
+};
+
+zone "a13.a06.daw.com" IN {
+      type master;
+      file "/etc/bind/db.a13.a06.daw.com";
+};
